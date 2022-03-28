@@ -10,7 +10,7 @@
 }
 
 body {
-    margin: 0;
+    height: 100vh;
 }
 
 header {
@@ -24,4 +24,40 @@ h1 {
     font-weight: 600;
     margin: 0;
     font-size: 50px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 64%;
+    height: 769px;
+    margin: auto;
+}
+
+.botao {
+    width: 36%;
+    height: 49%;
+}
+
+#botao1 {
+    background-color: #00b200;
+    margin-right: 7px;
+    border-top-left-radius: 100%;
+}
+
+#botao2 {
+    background-color: #b2b000;
+    border-top-right-radius: 100%;
+}
+
+#botao3 {
+    background-color: #b20000;
+    margin-right: 7px;
+    border-bottom-left-radius: 100%;
+}
+
+#botao4 {
+    background-color: #0000b2;
+    border-bottom-right-radius: 100%;
 }
