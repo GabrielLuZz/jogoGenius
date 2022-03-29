@@ -71,8 +71,46 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
+    text-align: center;
     z-index: 99;
     top: 20%;
     left: 31%;
     background-color: #7efed3;
+    flex-direction: column;
+}
+
+.primeiroTitulo {
+    color: rgb(32, 32, 32);
+    font-size: 30px;
+    font-weight: 400 Medium;
+    width: 280px;
+}
+
+.textoPosErro{
+    font-size: 15px;
+    color: rgb(36, 36, 36);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 200px;
+    justify-content: space-around;
+}
+
+.botaoCentral{
+    font-family:sans-serif;
+    font-weight: bold;
+    display: flex;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+    width: 150px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+#conteudoPosErro{
+    display: flex;
+    justify-content: space-around;
 }
