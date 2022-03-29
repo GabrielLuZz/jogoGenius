@@ -30,9 +30,10 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 64%;
+    width: 1228px;
     height: 840px;
     margin: auto;
+    position: relative;
 }
 
 .botao {
@@ -65,13 +66,13 @@ main {
 .conteudoCentral {
     border-radius: 70%;
     width: 444px;
-    height: 468px;
+    height: 494px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: absolute;
     z-index: 99;
-    top: 27%;
-    left: 39%;
+    top: 20%;
+    left: 31%;
     background-color: #7efed3;
 }
