@@ -1,3 +1,59 @@
+@keyframes verde {
+    0% {
+        background-color: #00b200;
+    }
+    50% {
+        background-color: #01f800;
+        transform: scale(1.04);
+        box-shadow: 0 0 40px 15px #01f800;
+    }
+    100% {
+        background-color: #00b200;
+    }
+}
+
+@keyframes amarelo {
+    0% {
+        background-color: #b2b000;
+    }
+    50% {
+        background-color: #f8f400;
+        transform: scale(1.04);
+        box-shadow: 0 0 40px 15px #f8f400;
+    }
+    100% {
+        background-color: #b2b000;
+    }
+}
+
+@keyframes vermelho {
+    0% {
+        background-color: #b20000;
+    }
+    50% {
+        background-color: #fb0000;
+        transform: scale(1.04);
+        box-shadow: 0 0 40px 15px #fb0000;
+    }
+    100% {
+        background-color: #b20000;
+    }
+}
+
+@keyframes azul {
+    0% {
+        background-color: #0000b2;
+    }
+    50% {
+        background-color: #0000e5;
+        transform: scale(1.04);
+        box-shadow: 0 0 40px 15px #0000e5;
+    }
+    100% {
+        background-color: #0000b2;
+    }
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600&display=swap');
 * {
     margin: 0;
@@ -45,22 +101,26 @@ main {
     background-color: #00b200;
     margin-right: 7px;
     border-top-left-radius: 100%;
+    animation-duration: 0.9s;
 }
 
 #botao2 {
     background-color: #b2b000;
     border-top-right-radius: 100%;
+    animation-duration: 0.9s;
 }
 
 #botao3 {
     background-color: #b20000;
     margin-right: 7px;
     border-bottom-left-radius: 100%;
+    animation-duration: 0.9s;
 }
 
 #botao4 {
     background-color: #0000b2;
     border-bottom-right-radius: 100%;
+    animation-duration: 0.9s;
 }
 
 .conteudoCentral {
@@ -69,7 +129,7 @@ main {
     height: 494px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     position: absolute;
     text-align: center;
     z-index: 99;
@@ -86,7 +146,7 @@ main {
     width: 280px;
 }
 
-.textoPosErro{
+.textoPosErro {
     font-size: 15px;
     color: rgb(36, 36, 36);
     display: flex;
@@ -97,8 +157,8 @@ main {
     justify-content: space-around;
 }
 
-.botaoCentral{
-    font-family:sans-serif;
+.botaoCentral {
+    font-family: sans-serif;
     font-weight: bold;
     display: flex;
     color: white;
@@ -110,7 +170,7 @@ main {
     justify-content: center;
 }
 
-#conteudoPosErro{
-    display: flex;
-    justify-content: space-around;
+.botaoCentral:hover {
+    cursor: pointer;
+    transform: scale(1.1);
 }
