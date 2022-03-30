@@ -1,3 +1,5 @@
+colocarLayoutStatico()
+
 let botoes = document.querySelectorAll('.botao');
 
 const conteudoCentral = document.querySelector('.conteudoCentral');
@@ -9,6 +11,31 @@ let sequencia = [];
 let sequenciaDoUsuario = [];
 
 let maiorPontuacao = 0;
+
+function colocarLayoutStatico() {
+    const layout = document.createElement('section');
+    let script = document.querySelector('script');
+
+    layout.innerHTML = `
+    <header>
+        <h1>Genius</h1>
+    </header>
+
+    <main>
+        <div id="botao1" class="botao" data-color="verde"></div>
+        <div id="botao2" class="botao" data-color="amarelo"></div>
+        <div id="botao3" class="botao" data-color="vermelho"></div>
+        <div id="botao4" class="botao" data-color="azul"></div>
+
+        <section class="paiCentral">
+            <div class="conteudoCentral">
+
+            </div>
+        </section>
+    </main>`;
+
+    document.body.insertBefore(layout, script);
+}
 
 const sortear = () => {
     let index = Math.round(Math.random() * 3);
